@@ -1,0 +1,16 @@
+2023-12-04 10:18:43.173066+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "create table [*]user (id bigint not null, email varchar(255), nom varchar(255), password varchar(255), primary key (id))"; attendu "identifier"
+Syntax error in SQL statement "create table [*]user (id bigint not null, email varchar(255), nom varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id bigint not null, email varchar(255), nom varchar(255), password varchar(255), primary key (id)) [42001-224]
+2023-12-04 10:25:42.906021+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPRUNT " non trouvée
+Table "EMPRUNT " not found; SQL statement:
+SELECT * FROM "EMPRUNT " [42102-224]
+2023-12-04 10:27:07.985181+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "alter table if exists emprunt add column [*]user bigint"; attendu "identifier"
+Syntax error in SQL statement "alter table if exists emprunt add column [*]user bigint"; expected "identifier"; SQL statement:
+alter table if exists emprunt add column user bigint [42001-224]
+2023-12-04 10:27:08.005172+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "alter table if exists emprunt add constraint FKwcwy7o354jnckhsqsspq2fjy foreign key ([*]user) references ""user"""; attendu "identifier"
+Syntax error in SQL statement "alter table if exists emprunt add constraint FKwcwy7o354jnckhsqsspq2fjy foreign key ([*]user) references ""user"""; expected "identifier"; SQL statement:
+alter table if exists emprunt add constraint FKwcwy7o354jnckhsqsspq2fjy foreign key (user) references "user" [42001-224]
